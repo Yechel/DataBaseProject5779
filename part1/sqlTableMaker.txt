@@ -1,0 +1,72 @@
+CREATE TABLE costumers
+(
+  costumerId INT NOT NULL,
+  type VARCHAR(10) NOT NULL,
+  fristName VARCHAR(10) NOT NULL,
+  lastName VARCHAR(10) NOT NULL,
+  PRIMARY KEY (costumerId)
+);
+
+CREATE TABLE costumerService
+(
+  priority INT NOT NULL,
+  status VARCHAR(10) NOT NULL,
+  type VARCHAR(10) NOT NULL,
+  requestid INT NOT NULL,
+  timeOfRecived DATE NOT NULL,
+  timeOfChangedStatus DATE NOT NULL,
+  orderId INT,
+  issue VARCHAR(300) NOT NULL,
+  costumerId INT NOT NULL,
+  PRIMARY KEY (requestid),
+FOREIGN KEY orderId REFERENCES tickets(orderId),
+  FOREIGN KEY (costumerId) REFERENCES costumers(costumerId)
+);
+
+CREATE TABLE area
+(
+  areaId INT NOT NULL,
+  areaName VARCHAR(20) NOT NULL,
+  PRIMARY KEY (areaId)
+);
+
+CREATE TABLE city
+(
+  cityId INT NOT NULL,
+  cityName VARCHAR(20) NOT NULL,
+  areaId INT NOT NULL,
+  PRIMARY KEY (cityId),
+  FOREIGN KEY (areaId) REFERENCES area(areaId)
+);
+
+CREATE TABLE city_stations
+(
+  stationId INT NOT NULL,
+  stationName VARCHAR(20) NOT NULL,
+  cityId INT NOT NULL,
+  PRIMARY KEY (stationId),
+  FOREIGN KEY (cityId) REFERENCES city(cityId)
+);
+
+CREATE TABLE communications
+(
+  adress VARCHAR(20) NOT NULL,
+  phoneNumber VARCHAR(11) NOT NULL,
+  email VARCHAR(20) NOT NULL,
+  costumerId INT NOT NULL,
+  PRIMARY KEY (costumerId),
+  FOREIGN KEY (costumerId) REFERENCES costumers(costumerId)
+);
+
+CREATE TABLE tickets
+(
+  date DATE NOT NULL,
+  orderId INT NOT NULL,
+  costumerId INT NOT NULL,
+  stationIdOn INT NOT NULL,
+  stationIdOff INT NOT NULL,
+  PRIMARY KEY (orderId),
+  FOREIGN KEY (costumerId) REFERENCES costumers(costumerId),
+  FOREIGN KEY (stationIdOn) REFERENCES city_stations(stationId),
+  FOREIGN KEY (stationIdOff) REFERENCES city_stations(stationId)
+);
