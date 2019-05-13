@@ -1,0 +1,22 @@
+2| 'finish'| 'onGoning'| 15001| to_date('05-12-2020 12:33:24', 'dd-mm-yyyy hh24:mi:ss')| to_date('10-12-2020 21:19:24', 'dd-mm-yyyy hh24:mi:ss')| 5605| 'Long time wating'| 10017943
+1| 'finish'| 'onGoning'| 15002| to_date('12-01-2021 09:08:29', 'dd-mm-yyyy hh24:mi:ss')| to_date('17-01-2021 14:21:29', 'dd-mm-yyyy hh24:mi:ss')| 21595| 'Train didn''t came on time!'| 10005561
+4| 'finish'| 'wating'| 15003| to_date('05-08-2025 00:03:27', 'dd-mm-yyyy hh24:mi:ss')| to_date('06-08-2025 10:30:27', 'dd-mm-yyyy hh24:mi:ss')| 18257| 'Long Driving'| 10015379
+commit;2|finis| 'onGoning'| 15001| to_date('05-12-2020 12:33:24', 'dd-mm-yyyy hh24:mi:ss')| to_date('09-12-2020 12:35:24', 'dd-mm-yyyy hh24:mi:ss')| 5605| 'Long time wating'| 10017943
+1|finis| 'onGoning'| 15002| to_date('12-01-2021 09:08:29', 'dd-mm-yyyy hh24:mi:ss')| to_date('16-01-2021 16:06:29', 'dd-mm-yyyy hh24:mi:ss')| 21595| 'Train didn''t came on time!'| 10005561
+4|finis| 'wating'| 15003| to_date('05-08-2025 00:03:27', 'dd-mm-yyyy hh24:mi:ss')| to_date('05-08-2025 22:41:27', 'dd-mm-yyyy hh24:mi:ss')| 18257| 'Long Driving'| 10015379
+commit;2|finish| 'onGoning'| 15001| to_date('05-12-2020 12:33:24', 'dd-mm-yyyy hh24:mi:ss')| to_date('07-12-2020 06:13:24', 'dd-mm-yyyy hh24:mi:ss')| 5605| 'Long time wating'| 10017943
+1|finish| 'onGoning'| 15002| to_date('12-01-2021 09:08:29', 'dd-mm-yyyy hh24:mi:ss')| to_date('14-01-2021 11:49:29', 'dd-mm-yyyy hh24:mi:ss')| 21595| 'Train didn''t came on time!'| 10005561
+4|finish| 'wating'| 15003| to_date('05-08-2025 00:03:27', 'dd-mm-yyyy hh24:mi:ss')| to_date('05-08-2025 12:21:27', 'dd-mm-yyyy hh24:mi:ss')| 18257| 'Long Driving'| 10015379
+commit;2|finish|onGoning| 15001|, 'dd-mm-yyyy hh24:mi:ss')| to_date('11-12-2020 12:04:24', 'dd-mm-yyyy hh24:mi:ss')| 5605|Long time wating| 10017943
+1|finish|onGoning| 15002|, 'dd-mm-yyyy hh24:mi:ss')| to_date('16-01-2021 11:03:29', 'dd-mm-yyyy hh24:mi:ss')| 21595|Train didn''t came on time!| 10005561
+4|finish|wating| 15003|, 'dd-mm-yyyy hh24:mi:ss')| to_date('09-08-2025 05:23:27', 'dd-mm-yyyy hh24:mi:ss')| 18257|Long Driving| 10015379
+commit;2|finish|onGoning| 15001|05-12-2020, 'dd-mm-yyyy hh24:mi:ss')| to_date('07-12-2020 07:39:24', 'dd-mm-yyyy hh24:mi:ss')| 5605|Long time wating| 10017943
+1|finish|onGoning| 15002|12-01-2021, 'dd-mm-yyyy hh24:mi:ss')| to_date('11-01-2021 22:26:29', 'dd-mm-yyyy hh24:mi:ss')| 21595|Train didn''t came on time!| 10005561
+4|finish|wating| 15003|05-08-2025, 'dd-mm-yyyy hh24:mi:ss')| to_date('08-08-2025 11:49:27', 'dd-mm-yyyy hh24:mi:ss')| 18257|Long Driving| 10015379
+commit;2|finish|onGoning| 15001|05-12-2020 12:33:2| to_date('10-12-2020 17:58:24', 'dd-mm-yyyy hh24:mi:ss')| 5605|Long time wating| 10017943
+1|finish|onGoning| 15002|12-01-2021 09:08:2| to_date('12-01-2021 05:54:29', 'dd-mm-yyyy hh24:mi:ss')| 21595|Train didn''t came on time!| 10005561
+4|finish|wating| 15003|05-08-2025 00:03:2| to_date('08-08-2025 13:27:27', 'dd-mm-yyyy hh24:mi:ss')| 18257|Long Driving| 10015379
+commit;2|finish|onGoning| 15001|05-12-2020 12:33:24|09-12-2020 21:38:24| 5605|Long time wating| 10017943
+1|finish|onGoning| 15002|12-01-2021 09:08:29|15-01-2021 06:01:29| 21595|Train didn''t came on time!| 10005561
+4|finish|wating| 15003|05-08-2025 00:03:27|06-08-2025 06:01:27| 18257|Long Driving| 10015379
+commit;
